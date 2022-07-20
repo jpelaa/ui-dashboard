@@ -12,9 +12,9 @@ const FlexContainer = styled.div`
 
 const Card = styled.div`
   padding: 1.5rem;
-  color: inherit;
+  color: ${props => props.theme.colors.primary};
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid ${props => props.theme.colors.primary};
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   width: 100%;
@@ -22,8 +22,8 @@ const Card = styled.div`
   &:hover,
   :focus,
   :active {
-    color: #0070f3;
-    border-color: #0070f3;
+    color: ${props => props.theme.colors.primary};
+    border-color: ${props => props.theme.colors.primary};
   }
 `
 

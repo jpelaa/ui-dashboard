@@ -3,9 +3,13 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
   html,
   body {
-    color: ${({ theme }) => theme.colors.primary};
     padding: 0;
     margin: 0;
+    font-size : 16px;
+    background-color : ${({ theme }) => {
+        console.log("theme ", theme)
+      return theme.colors.secondary
+    }}; 
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
